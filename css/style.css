@@ -55,7 +55,6 @@ img{
 }
 
 .pic{
-    height: 100%;
     position: absolute;
     width: 30%;
     display: inline-block;
