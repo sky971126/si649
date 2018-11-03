@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Diabetes Risk</title>
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Libre+Baskerville" rel="stylesheet"></head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="js/draw.js"></script>
+    <div>
+        <div class="row centered" id="title">
+            <div class="eight columns offset-by-two alpha">
+                <h1>What relates to Diabetes Risk</h1>
+            </div>
+        </div>
+        <div class="row centered" id="introduction">
+            <h2>
+                Diabetes is a group of metabolic diseases characterized by high blood sugar.
+            </h2>            
+            <h2>
+                Currently, diabetes has become a more and more common diease. 
+            </h2>
+        </div>
+        <div class="introduction2">
+            <h2>
+                However, it is reported that diabetes risk can be reduced by healthier diets, higher levels of physical activity and smoking cessation, etc.
+                Therefore, I would like to explore what factors relate to diabetes and alert people about their own risk level of diabetes so that they are able to take preventive measures.
+            </h2>
+        </div>
+        <div class="introduction2">
+            <h2>
+                A diabetes dataset from an Indian hospital is used. A total of 4804 patients is investigated. 87.57% of them have high diabetes risk level. 
+                How the percentage of high diabetes risk patients varies corresponding to the following four factors is explored here.
+                <ul>
+                    <li>Gender
+                    <li>Level of Physical Activity
+                    <li>Affordability for Health Care
+                    <li>Smoking Habit
+                </ul>
+            </h2>
+        </div>
+        <div class="introduction2">
+            <div class="row centered">
+                <h1 class="aaa">1. Gender</h1>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes Risk Level vs. Gender is shown at right. As we can see, Female suffers more from diabetes risk. Difference in low risk percentage is 7.56%.
+                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/gender.png">
+                </div>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes Risk Percentage Increase over Average vs. Gender is shown at right. Female suffers a 4.90% increase in diabetes risk than average. However, male has a 3.74% decrease in high diabetes risk.
+                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/gender2.png">
+                </div>
+            </div>
+
+
+
+
+            <div class="row centered">
+                <h1 class="aaa">2. Physical activity</h1>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes Risk Level vs. Physical Activity is shown at right. As we can see, patients who conduct trenuous physical activities have a dramatic increase in percentage of low diabetes risk. Patients who conduct mild physical activities are slightly larger than those who conducted none.                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/physical.png">
+                </div>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes Risk Percentage Increase over Average vs. Physical Activity is shown at right. Patients who conducted trenuous physical activities has a 4.75% decrease in high diabetes risk than average. However, other two groups suffer an increase.
+                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/physical2.png">
+                </div>
+            </div>
+
+
+
+            <div class="row centered">
+                <h1 class="aaa">3. Affordability for Health Care</h1>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes risk level vs. Affordability for Health care is shown at right. Surprisingly, people who have basic affordability for health care have the lowest diabetes risk and the difference is not dramatic.
+                        It is possible that people who can't afford health care are in overall bad situation and people who have well affordability suffer from illness of affluence.
+                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/afford.png">
+                </div>
+            </div>           
+
+
+
+
+            <div class="row centered">
+                <h1 class="aaa">4. Smoking Habit</h1>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes risk level vs. Smoking Habit is shown at right. As we can see, smoking is a dramatic factor for diabetes risk in this dataset. Almost all patients who have a smoking habit are in high diabetes risk level. Difference in low risk percentage is nearly 13%.
+                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/smoke.png">
+                </div>
+            </div>
+            <div class="word_pic">
+                <div class="word">
+                    <h2>
+                        Diabetes Risk Percentage Increase over Average vs. Smoking Habit is shown at right. Smokers suffer a 13.86% increase in diabetes risk than average. However, non-smokers has a 0.54% decrease in high diabetes risk.
+                    </h2>
+                </div>
+                <div class="pic">
+                    <img src="pic/smoke2.png">
+                </div>
+            </div>        
+            </div>   
+            <div class="row centered">
+                <h1>Summary</h1>
+            </div> 
+            <div class="introduction2">
+                <h2>
+                    Gender, physcial activity level and smoking habit have dramatic impact on diabetes risk level. Female, people who conduct few physcial activities and smokers should be more alert with their potential diabetes risk.
+                </h2>
+            </div>
+         </div>
+    </div>
+    <div class="container">
+        <div class="row centered">
+            <div class="six columns offset-by-three alpha">
+                <h1>Test Your Own Diabetes Risk</h1>
+            </div>
+        </div>
+        <div class="row centered">
+            <div class="six columns offset-by-three alpha">
+                <p class="desc centered">Select different factors</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px;">
+            <div class="four columns offset-by-three alpha">
+                <div class="row">
+                    <h3>Gender</h3>
+                </div>
+                <div class="row" id="sex">
+                    <div class="button current" data-val= "All" >All</div>
+                    <div class="button" data-val="Male">Male</div>
+                    <div class="button" data-val="Female" style="margin-right:0">Female</div>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="row" id="afford">
+                    <h3>Affordability for Health Care</h3>
+                    <div class="button current" data-val= "All" >All</div>
+                    <div class="button" data-val="We are not">None</div>
+                    <div class="button" data-val="We are able">Basic</div>
+                    <div class="button" data-val="We can" style="margin-right:0">Well </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns offset-by-three alpha" id="physical" style="margin-top:10px;">
+                <h3>Level of Physical activity in a typical day</h3>
+                <div class="button current" data-val= "All" >All</div>
+                <div class="button" data-val="None">None</div>
+                <div class="button" data-val="Mild">Mild</div>
+                <div class="button" data-val="Strenuous" style="margin-right:0">Strenuous</div>
+            </div>
+            <div class="three columns">
+                <div class="row" id="smoking" style="margin-top:10px;">
+                    <h3>Smoking Habit</h3>
+                    <div class="button current" data-val= "All" >All</div>
+                    <div class="button" data-val="No">No</div>
+                    <div class="button" data-val="Yes" style="margin-right:0">Yes</div>
+                </div>
+            </div>
+        </div>
+        <div class="row centered" style="margin-top:20px;">
+            <div class="four columns offset-by-four alpha">
+                <p class="desc">There are about this many people in this group&hellip;</p>
+            </div>
+        </div>
+        <div class="row centered">
+            <div class="four columns offset-by-four alpha">
+                <div id="n">0</div>
+            </div>
+        </div>
+        <div class="row centered">
+            <div class="four columns offset-by-four alpha">
+                <p class="desc centered" >&hellip;<h3>and of these people, here are percentage variance of high diabetes risk level over average, 87.57%</h3></p>
+            </div>
+        </div>
+      
+        <div class="row">
+            <div id="chart1">
+
+            </div>
+        </div>
+        <div id="reference">
+                background picture source: <a href="http://www.quanjing.com/"> http://www.quanjing.com/</a>
+        </div>
+    </div>
+
+</body>
+</html>
